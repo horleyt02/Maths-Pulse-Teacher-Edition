@@ -8,50 +8,44 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f5f7fa;
+            background-color: #f4f6f9;
             margin: 0;
-            padding: 50px;
-            color: #333;
+            padding: 60px;
         }
 
         h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
+            font-size: 64px;
+            color: #1f2937;
         }
 
         hr {
-            margin-bottom: 40px;
+            margin: 30px 0;
         }
 
-        .container {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        h2 {
+            color: #6b7280;
         }
 
-        .card {
-            background: white;
-            padding: 30px;
-            width: 300px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: 0.2s;
+        .menu {
+            margin-top: 40px;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card a {
+        .button {
+            display: block;
+            width: 350px;
+            padding: 25px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 12px;
             text-decoration: none;
-            color: #1e3a8a;
+            color: #1e40af;
             font-size: 24px;
             font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .card p {
-            margin-top: 10px;
-            color: #666;
+        .button:hover {
+            background-color: #eef4ff;
         }
     </style>
 </head>
@@ -63,18 +57,16 @@
 
     <h2>Select an option</h2>
 
-    <div class="container">
+    <div class="menu">
 
-        <div class="card">
-            <a href="teaching-interactives/">Teaching Interactives      <p>Interactive teaching tools and classroom activities.</p>
-        </div>
+        <a class="button" href=            Teaching Interactives
+        </a>
 
-        <div class="card">
-            worksheet-generators/Worksheet Generators</a>
-            <p>Create customised maths worksheets and practice tasks.</p>
-        </div>
+        <a class="button" href=           Worksheet Generators
+        </a>
 
     </div>
 
 </body>
 </html>
+``
