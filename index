@@ -6,74 +6,117 @@
     <title>Maths Pulse Teacher Edition</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+        * {
             margin: 0;
-            padding: 40px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
         }
 
         h1 {
-            color: #1a3b75;
-            font-size: 60px;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #1f2937;
         }
 
-        h2 {
-            color: #666;
-            font-size: 36px;
+        hr {
+            border: none;
+            border-top: 2px solid #d1d5db;
+            margin-bottom: 50px;
         }
 
-        .subjects {
-            display: flex;
+        .subtitle {
+            font-size: 1.5rem;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
-            flex-wrap: wrap;
         }
 
         .card {
             background: white;
-            width: 250px;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .card a {
+            border-radius: 20px;
+            padding: 40px;
             text-decoration: none;
-            color: #1a3b75;
-            font-size: 24px;
-            font-weight: bold;
+            color: #1f2937;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: all 0.25s ease;
         }
 
         .card:hover {
-            background: #eef4ff;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+            color: #1e40af;
+        }
+
+        .card p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-<h1>Welcome to Maths Pulse Teacher Edition</h1>
+    <div class="container">
 
-<h2>Select a Subject</h2>
+        <h1>Maths Pulse Teacher Edition</h1>
+        <hr>
 
-<div class="subjects">
+        <p class="subtitle">
+            Select a resource category below.
+        </p>
 
-    <div class="card">
-        <a href="subjects/maths/">Mathematics</a>
+        <div class="options">
 
-    <div class="card">
-        subjects/science/Science</a>
+            <a href="interactives/
+                <h2>Teaching Interactives</h2>
+                <p>
+                    Access classroom-ready interactive tools, activities,
+                    visualisations and learning resources.
+                </p>
+            </a>
+
+            <arksheet-generators/
+                <h2>Worksheet Generators</h2>
+                <p>
+                    Generate customised worksheets, revision materials and
+                    practice questions for students.
+                </p>
+            </a>
+
+        </div>
+
+        <footer>
+            Maths Pulse Teacher Edition
+        </footer>
+
     </div>
-
-    <div class="card">
-        <a hrefs/english/English</a>
-    </div>
-
-    <div class="card">
-        <a href="subjectsills/Study Skills</a>
-    </div>
-
-</div>
 
 </body>
 </html>
