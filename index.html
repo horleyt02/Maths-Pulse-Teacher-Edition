@@ -23,16 +23,26 @@
             margin-bottom: 40px;
         }
 
+        h2 {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
         .container {
             display: flex;
             gap: 30px;
             flex-wrap: wrap;
         }
 
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
         .card {
             background: white;
             padding: 30px;
-            width: 300px;
+            width: 320px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             transition: 0.2s;
@@ -42,15 +52,14 @@
             transform: translateY(-5px);
         }
 
-        .card a {
-            text-decoration: none;
+        .card-title {
             color: #1e3a8a;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        .card p {
-            margin-top: 10px;
+        .card-text {
             color: #666;
         }
     </style>
@@ -65,14 +74,23 @@
 
     <div class="container">
 
-        <div class="card">
-            <a href="teaching-interactives/">Teaching Interactives      <p>Interactive teaching tools and classroom activities.</p>
-        </div>
+        teaching-interactives/
+            <div class="card">
+                <div class="card-title">Teaching Interactives</div>
+                <div class="card-text">
+                    Interactive teaching tools and classroom activities.
+                </div>
+            </div>
+        </a>
 
-        <div class="card">
-            Worksheet Generators</a>
-            <p>Create customised maths worksheets and practice tasks.</p>
-        </div>
+        worksheet-generators/
+            <div class="card">
+                <div class="card-title">Worksheet Generators</div>
+                <div class="card-text">
+                    Create customised maths worksheets and practice tasks.
+                </div>
+            </div>
+        </a>
 
     </div>
 
