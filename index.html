@@ -8,60 +8,43 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            margin: 0;
+            background-color: #f5f7fa;
             padding: 50px;
-            color: #333;
+            margin: 0;
         }
 
         h1 {
             font-size: 4rem;
-            margin-bottom: 20px;
-        }
-
-        hr {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #666;
-            margin-bottom: 30px;
         }
 
         .container {
             display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .card-link {
-            text-decoration: none;
-            color: inherit;
+            gap: 30px;
+            margin-top: 40px;
         }
 
         .card {
+            width: 350px;
             background: white;
             padding: 30px;
-            width: 350px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: 0.2s;
+            cursor: pointer;
         }
 
         .card:hover {
             transform: translateY(-5px);
         }
 
-        .card-title {
-            color: #243e90;
-            font-size: 36px;
+        .title {
+            font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 15px;
+            color: #243e90;
         }
 
-        .card-text {
+        .description {
+            margin-top: 15px;
             color: #666;
-            font-size: 18px;
         }
     </style>
 </head>
@@ -69,29 +52,23 @@
 
 <h1>Maths Pulse Teacher Edition</h1>
 
-<hr>
-
 <h2>Select an option</h2>
 
 <div class="container">
 
-    <a class="card-ctives/
-        <div class="card">
-            <div class="card-title">Teaching Interactives</div>
-            <div class="card-text">
-                Interactive teaching tools and classroom activities.
-            </div>
+    <div class="card" onclick="location.href='teaching-interactives/'">
+        <div class="title">Teaching Interactives</div>
+        <div class="description">
+            Interactive teaching tools and classroom activities.
         </div>
-    </a>
+    </div>
 
-    worksheet-generators/
-        <div class="card">
-            <div class="card-title">Worksheet Generators</div>
-            <div class="card-text">
-                Create customised maths worksheets and practice tasks.
-            </div>
+    <div class="card" onclick="location.href='worksheet-generators/'">
+        <div class="title">Worksheet Generators</div>
+        <div class="description">
+            Create customised maths worksheets and practice tasks.
         </div>
-    </a>
+    </div>
 
 </div>
 
